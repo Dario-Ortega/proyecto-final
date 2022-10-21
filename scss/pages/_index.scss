@@ -1,0 +1,38 @@
+.portada {
+    height: 70vh;
+    background-image: url(../assets/img/fondos/fondo-1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 150px;
+    @include flex-center();
+
+    &-titulo {
+        @include texto($fuente-secundaria , 2rem, bolder, $color-letra , $sombra-letra , none, .1rem, center);
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+
+        @include desktop {
+            font-size: 3rem;
+        }
+    }
+
+    &-parrafo {
+        @include texto($fuente-secundaria , 1.5rem, bolder, $color-letra , $sombra-letra , none, .1rem, center);
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size: 2.3rem;
+        }
+    }
+
+    &-btn {
+        @include flex-center();
+    }
+
+}
+

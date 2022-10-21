@@ -1,0 +1,22 @@
+@mixin texto($font , $size , $weight , $color , $shadow , $transform , $spacing , $align) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    text-shadow: $shadow;
+    text-transform: $transform;
+    letter-spacing: $spacing;
+    text-align: $align;
+}
+
+@mixin tablet {
+    @media (min-width:768px) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media (min-width:1200px) {
+        @content
+    }
+}

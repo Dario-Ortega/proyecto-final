@@ -1,0 +1,18 @@
+%tytle {
+    background-color: $color-titulo;
+    @include texto($fuente-principal , 1.6rem , 700 , $color-letra , $sombra-letra , uppercase , .1rem , center);
+    padding: 10px;
+    margin: 10px 0;
+
+    @include tablet {
+        font-size: 1.9rem;
+        letter-spacing: .2rem;
+        padding: 13px;
+    }
+
+    @include desktop {
+        font-size: 2.2rem;
+        letter-spacing: .3rem;
+        padding: 16px;
+    }
+}

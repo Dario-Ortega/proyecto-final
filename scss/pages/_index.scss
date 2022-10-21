@@ -3,7 +3,6 @@
     background-image: url(../assets/img/fondos/fondo-1.jpg);
     background-position: center;
     background-size: cover;
-    margin: 0 150px;
     @include flex-center();
 
     &-titulo {
@@ -36,3 +35,10 @@
 
 }
 
+.novedades {
+
+    &-titulo {
+        @extend %tytle;
+    }
+
+}

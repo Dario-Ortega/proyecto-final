@@ -13,6 +13,34 @@ a {
   text-decoration: none;
 }
 
+.novedades-titulo {
+  background-color: #f3722c;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .novedades-titulo {
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem;
+    padding: 13px;
+  }
+}
+@media (min-width: 1200px) {
+  .novedades-titulo {
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+    padding: 16px;
+  }
+}
+
 .bc-fondo {
   background-color: #e85d04;
 }
@@ -80,7 +108,6 @@ a {
   background-image: url(../assets/img/fondos/fondo-1.jpg);
   background-position: center;
   background-size: cover;
-  margin: 0 150px;
   display: flex;
   justify-content: center;
   align-items: center;

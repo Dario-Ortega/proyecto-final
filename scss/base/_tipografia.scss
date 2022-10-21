@@ -1,6 +1,6 @@
 %tytle {
     background-color: $color-titulo;
-    @include texto($fuente-principal , 1.6rem , 700 , $color-letra , $sombra-letra , uppercase , .1rem , center);
+    @include texto($fuente-titulo , 1.6rem , 700 , $color-letra , $sombra-letra , uppercase , .1rem , center);
     padding: 10px;
     margin: 10px 0;
 

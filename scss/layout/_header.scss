@@ -1,0 +1,20 @@
+.bc-fondo{
+    background-color: $color-principal;
+}
+
+.nav-texto {
+    @include texto($fuente-principal , 1.25rem , 700 , $color-letra , $sombra-letra , uppercase , none , center);
+    margin-top: 50px;
+    line-height: 50px;
+
+    @include tablet {
+        font-size: 1.438rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    @include desktop {
+        font-size: 1.563rem;
+    }
+}
+

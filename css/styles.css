@@ -12,4 +12,68 @@ a {
   text-decoration: none;
 }
 
+.bc-fondo {
+  background-color: #e85d04;
+}
+
+.nav-texto {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: none;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 50px;
+}
+@media (min-width: 768px) {
+  .nav-texto {
+    font-size: 1.438rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-texto {
+    font-size: 1.563rem;
+  }
+}
+
+.btn-primary {
+  --bs-btn-bg: #e85d04;
+  --bs-btn-border-color: #e85d04;
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-hover-bg: #1b3b6f;
+  --bs-btn-hover-border-color: #1b3b6f;
+  --bs-btn-focus-shadow-rgb: #e85d04;
+  --bs-btn-active-color: #1b3b6f;
+  --bs-btn-active-bg: #e85d04;
+  --bs-btn-active-border-color: #e85d04;
+  transition: 0.5s ease-in-out;
+}
+.btn-primary {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: none;
+  text-align: center;
+  border: 2px solid #ff5400;
+  background-color: #ff5400;
+  padding: 5px;
+  border-radius: 5px;
+}
+@media (min-width: 1200px) {
+  .btn-primary:hover {
+    border: 2px solid #1b3b6f;
+    background-color: #1b3b6f;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

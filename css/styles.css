@@ -41,18 +41,39 @@ a {
   }
 }
 
-.btn-primary {
-  --bs-btn-bg: #e85d04;
-  --bs-btn-border-color: #e85d04;
-  --bs-btn-border-radius: .5rem;
-  --bs-btn-hover-bg: #1b3b6f;
-  --bs-btn-hover-border-color: #1b3b6f;
-  --bs-btn-focus-shadow-rgb: #e85d04;
-  --bs-btn-active-color: #1b3b6f;
-  --bs-btn-active-bg: #e85d04;
-  --bs-btn-active-border-color: #e85d04;
-  transition: 0.5s ease-in-out;
+.modal-title {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
 }
+
+.acceder-form input {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #292525;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border-radius: 0;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  margin: 10px 0;
+  border-bottom: 1px solid #a9a9a9;
+  padding: 5px 10px;
+  caret-color: #e85d04;
+}
+.acceder-form input:focus {
+  box-shadow: inherit;
+}
+
+.acceder-form i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
 .btn-primary {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
@@ -66,6 +87,7 @@ a {
   background-color: #ff5400;
   padding: 5px;
   border-radius: 5px;
+  transition: 0.5s ease-in-out;
 }
 @media (min-width: 1200px) {
   .btn-primary:hover {

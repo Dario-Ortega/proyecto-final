@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/img/fondos/game-controller.ico" type="image/x-icon">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Noto+Sans:wght@100;400;700&family=Roboto+Slab:wght@100;400;700&family=Staatliches&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:wght@100;400;700&family=Noto+Sans:wght@100;400;700&family=Roboto+Slab:wght@100;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Compra Gamer - La Tienda Gamer #1 de Argentina</title>
@@ -102,30 +101,48 @@
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h1 class="modal-title fs-3" id="iniciar-sesion">Iniciar Sesion</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title" id="iniciar-sesion">Iniciar Sesion</h1>
+
                     </div>
 
                     <div class="modal-body">
+
                         <form action="" class="acceder-form">
-                            <div>
-                                <label for="usuario">Usuario</label>
-                                <input type="text" class="form-control" placeholder="Ingrese Nombre de Usuario" id="usuario"
-                                    name="usuario">
+
+                            <div class="d-flex justify-content-center">
+
+                                <div>
+                                    <label for="usuario" class="col-form-label"><i
+                                            class="bi bi-person-fill"></i></label>
+                                </div>
+
+                                <div class="col-9">
+                                    <input type="text" class="form-control " placeholder="Nombre de Usuario"
+                                        id="usuario" name="usuario">
+                                </div>
+
                             </div>
-                            <div>
-                                <label for="pass">Contraseña</label>
-                                <input type="password" placeholder="Ingrese Contraseña" class="form-control" id="pass"
-                                    name="pass">
+
+                            <div class="d-flex justify-content-center">
+
+                                <div>
+                                    <label for="pass"><i class="bi bi-lock-fill"></i></label>
+                                </div>
+
+                                <div class="col-9">
+                                    <input type="password" placeholder="Contraseña" class="form-control" id="pass"
+                                        name="pass">
+                                </div>
+
                             </div>
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="p-3">
-                            <a type="submit" class="boton-inicio" href="#" name="button">Continuar</a>
+                            <a type="submit" class="btn btn-primary" href="#" name="button">Continuar</a>
                         </div>
                         <div>
-                            <a type="button" class="boton-inicio" href="#">Registrarse</a>
+                            <a type="button" class="btn btn-primary" href="#">Registrarse</a>
                         </div>
                     </div>
 

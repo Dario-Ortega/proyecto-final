@@ -1,0 +1,21 @@
+.acceder-form input {
+    @include texto($fuente-principal , 1.25rem, 700, $color-letra-art , none , none, .2rem, center);
+    border-radius: 0;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    margin: 10px 0;
+    border-bottom: 1px solid #a9a9a9;
+    padding: 5px 10px;
+    caret-color: $color-principal;
+
+    &:focus {
+        box-shadow: inherit;
+}
+    
+}
+
+.acceder-form i{
+    font-size: 35px;
+    margin-right: 10px;
+}

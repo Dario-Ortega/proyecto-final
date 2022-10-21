@@ -88,3 +88,31 @@
         transition: .3s ease;
     }
 }
+
+//Boton Articulo
+%art-btn {
+    @include texto($fuente-articulo , 1rem , 400 , $color-letra , $sombra-letra-btn , uppercase , none , center);
+    padding: .8rem 2rem;
+    background: $color-boton;
+    border: 2px solid $color-boton;
+    cursor: pointer;
+    border-radius: .3rem;
+
+    @include tablet {
+        padding: .9rem 2.1rem;
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        padding: 1rem 2.3rem;
+        font-size: 1.4rem;
+
+        &:hover {
+            border: 2px solid $color-hover;
+            background: $color-hover;
+            transition: .3s;
+            color: $color-letra;
+            transition: .3s ease-in-out;
+        }
+    }
+}

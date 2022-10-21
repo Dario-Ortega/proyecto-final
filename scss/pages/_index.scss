@@ -36,9 +36,44 @@
 }
 
 .novedades {
-
     &-titulo {
         @extend %tytle;
+    }
+
+    &-art {
+        @include flex-art();
+
+        @include movile{
+            @include slider();
+        }
+    
+        @include desktop{
+            @include wrap();
+        }
+    }
+
+    &-producto{
+        @extend %articulo;
+    }
+
+    &-img {
+        @extend %art-img;
+    }
+
+    &-titulo-producto {
+        @extend %art-tytle;
+    }
+
+    &-cont-boton {
+        @include flex-center();
+    }
+
+    &-precio {
+        @extend %precio-tytle;
+    }
+
+    &-boton {
+        @extend %art-btn;
     }
 
 }

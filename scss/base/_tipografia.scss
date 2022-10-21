@@ -16,3 +16,27 @@
         padding: 16px;
     }
 }
+
+%art-tytle {
+    @include texto($fuente-articulo , 1.3rem , 400 , $color-letra-art , $sombra-letra-btn , uppercase , none , center);
+
+    @include tablet {
+        font-size: 1.4rem;
+    }
+
+    @include desktop {
+        font-size: 1.6rem;
+    }
+}
+
+%precio-tytle {
+    @include texto($fuente-articulo , 1.2rem , 400 , $color-letra-art , $sombra-letra-btn , uppercase , .1rem , center);
+
+    @include tablet {
+        font-size: 1.3rem;
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}

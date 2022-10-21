@@ -9,6 +9,12 @@
     text-align: $align;
 }
 
+@mixin movile {
+    @media (min-width:500px) {
+        @content
+    }
+}
+
 @mixin tablet {
     @media (min-width:768px) {
         @content
@@ -25,4 +31,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin display ($display , $justify , $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-art{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@mixin slider{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+}
+
+@mixin wrap{
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
 }

@@ -1,0 +1,29 @@
+//Seccion Contacto
+.contacto{
+    @include tablet{
+        &-titulo {
+            grid-area: titulo;
+        }
+    
+        &-detalles {
+            grid-area: detalles;
+        }
+    
+        &-formulario {
+            grid-area: formulario;
+        }
+    
+        &-redes {
+            grid-area: redes;
+        }
+    
+        & {
+            grid-template:
+                "titulo   formulario" auto 
+                "detalles formulario" 1fr 
+                "redes    formulario" auto 
+                / 1fr          1fr;
+            align-items: start;
+        }
+    }
+    }

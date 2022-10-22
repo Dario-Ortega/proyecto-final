@@ -182,3 +182,29 @@
         }
     }
 }
+
+//Boton Contacto
+.contacto-formulario-submit {
+    width: 100%;
+    height: 50px;
+    background-color: $color-letra-art;
+    border-radius: 7px;
+    color: $color-letra;
+    border: 1px solid $color-letra;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+
+    &:hover {
+        background-color: $color-hover;
+        box-shadow: 0 0 14px rgba(0, 0, 0, .2);
+        border: 1px solid $color-letra;
+        color: $color-letra;
+        transition: .3s ease-in-out;
+    }
+}

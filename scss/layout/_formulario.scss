@@ -1,3 +1,4 @@
+//Formulario Modal
 .acceder-form input {
     @include texto($fuente-principal , 1.25rem, 700, $color-letra-art , none , none, .2rem, center);
     border-radius: 0;
@@ -18,4 +19,24 @@
 .acceder-form i{
     font-size: 35px;
     margin-right: 10px;
+}
+
+//Formulario Contacto
+.contacto-formulario input,
+.contacto-formulario textarea {
+    border-radius: 7px;
+    border: none;
+    height: 40px;
+    padding: 5px 10px;
+    caret-color: $color-principal;
+
+    &:active,
+    &:focus {
+    outline: none;
+}
+}
+
+.contacto-formulario textarea {
+    height: auto;
+    resize: none;
 }

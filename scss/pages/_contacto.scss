@@ -1,3 +1,79 @@
 .preguntas-titulo {
     @extend %tytle;
 }
+
+.contacto {
+    background-color: $color-titulo;
+    border-radius: 14px;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+    color: white;
+    margin-top: 10px;
+
+    & p,
+    & label,
+    & ul {
+        @include texto($fuente-principal , 1rem, 700, $color-letra , $sombra-letra , none, .2rem, center);
+        margin: 0;
+        padding: 0;
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
+    }
+
+    &-titulo {
+        @include texto($fuente-principal , 1.6rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
+
+        @include tablet {
+            font-size: 2.1rem;
+        }
+
+        @include desktop {
+            font-size: 2.5rem;
+        }
+    }
+
+    &-detalles,
+    &-formulario {
+        display: grid;
+        gap: 20px;
+    }
+
+    &-formulario-grupo {
+        display: grid;
+        gap: 3px;
+    }
+
+    &-redes-cont {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    &-redes-iconos i {
+        font-size: 30px;
+
+        @include tablet {
+            font-size: 35px;
+        }
+    }
+
+}
+
+.r-fb {
+    @extend %fb;
+}
+
+.r-tw {
+    @extend %tw;
+}
+
+.r-it {
+    @extend %it;
+}
+
+.r-wt {
+    @extend %ws;
+}

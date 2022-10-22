@@ -166,6 +166,25 @@ a {
   margin-right: 10px;
 }
 
+.contacto-formulario input,
+.contacto-formulario textarea {
+  border-radius: 7px;
+  border: none;
+  height: 40px;
+  padding: 5px 10px;
+  caret-color: #e85d04;
+}
+.contacto-formulario input:active, .contacto-formulario input:focus,
+.contacto-formulario textarea:active,
+.contacto-formulario textarea:focus {
+  outline: none;
+}
+
+.contacto-formulario textarea {
+  height: auto;
+  resize: none;
+}
+
 .novedades-producto {
   margin: 15px;
   width: 350px;
@@ -268,6 +287,25 @@ a {
 @media (min-width: 1200px) {
   .acordeon-respuesta {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacto-titulo {
+    grid-area: titulo;
+  }
+  .contacto-detalles {
+    grid-area: detalles;
+  }
+  .contacto-formulario {
+    grid-area: formulario;
+  }
+  .contacto-redes {
+    grid-area: redes;
+  }
+  .contacto {
+    grid-template: "titulo   formulario" auto "detalles formulario" 1fr "redes    formulario" auto/1fr 1fr;
+    align-items: start;
   }
 }
 
@@ -422,6 +460,74 @@ a {
   justify-content: center;
   align-items: center;
 }
+.contacto {
+  background-color: #f3722c;
+  border-radius: 14px;
+  padding: 25px;
+  display: grid;
+  gap: 25px;
+  color: white;
+  margin-top: 10px;
+}
+.contacto p, .contacto label, .contacto ul {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .contacto p, .contacto label, .contacto ul {
+    font-size: 1.3rem;
+  }
+}
+.contacto-titulo {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contacto-titulo {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto-titulo {
+    font-size: 2.5rem;
+  }
+}
+.contacto-detalles, .contacto-formulario {
+  display: grid;
+  gap: 20px;
+}
+.contacto-formulario-grupo {
+  display: grid;
+  gap: 3px;
+}
+.contacto-redes-cont {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.contacto-redes-iconos i {
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .contacto-redes-iconos i {
+    font-size: 35px;
+  }
+}
+
 .btn-primary {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
@@ -554,23 +660,23 @@ a {
   }
 }
 
-.fb {
+.fb, .r-fb {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
 }
 @media (min-width: 1200px) {
-  .fb:hover {
+  .fb:hover, .r-fb:hover {
     color: #3b5998;
     transition: 0.3s ease-in-out;
   }
 }
 
-.tw {
+.tw, .r-tw {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
 }
 @media (min-width: 1200px) {
-  .tw:hover {
+  .tw:hover, .r-tw:hover {
     color: #55acee;
     transition: 0.3s ease-in-out;
   }
@@ -587,15 +693,50 @@ a {
   }
 }
 
-.it {
+.it, .r-it {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
 }
 @media (min-width: 1200px) {
-  .it:hover {
+  .it:hover, .r-it:hover {
     color: #e4405f;
     transition: 0.3s ease-in-out;
   }
+}
+
+.r-wt {
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+@media (min-width: 1200px) {
+  .r-wt:hover {
+    color: #43d854;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.contacto-formulario-submit {
+  width: 100%;
+  height: 50px;
+  background-color: #292525;
+  border-radius: 7px;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+.contacto-formulario-submit:hover {
+  background-color: #0d6efd;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */

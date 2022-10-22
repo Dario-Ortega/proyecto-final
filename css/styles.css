@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.novedades-titulo {
+.preguntas-titulo, .novedades-titulo {
   background-color: #f3722c;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -27,14 +27,14 @@ a {
   margin: 10px 0;
 }
 @media (min-width: 768px) {
-  .novedades-titulo {
+  .preguntas-titulo, .novedades-titulo {
     font-size: 1.9rem;
     letter-spacing: 0.2rem;
     padding: 13px;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-titulo {
+  .preguntas-titulo, .novedades-titulo {
     font-size: 2.2rem;
     letter-spacing: 0.3rem;
     padding: 16px;
@@ -208,6 +208,66 @@ a {
   .novedades-img {
     width: 400px;
     height: 400px;
+  }
+}
+
+.accordion-button {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .accordion-button {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .accordion-button {
+    font-size: 1.4rem;
+  }
+}
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background: #ff5400;
+  color: #fff;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(100%);
+}
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+.acordeon-pregunta {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .acordeon-pregunta {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .acordeon-pregunta {
+    font-size: 1.4rem;
+  }
+}
+
+.acordeon-respuesta {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .acordeon-respuesta {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .acordeon-respuesta {
+    font-size: 1.1rem;
   }
 }
 

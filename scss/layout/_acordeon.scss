@@ -1,0 +1,58 @@
+.accordion-button {
+    font-family: $fuente-principal;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        font-size: 1.4rem;
+    }
+
+    &:not(.collapsed) {
+        color: inherit;
+        background: $color-boton;
+        color: $color-letra;
+
+        &::after {
+            filter: brightness(0%) invert(100%);
+        }
+    }
+
+    &:focus {
+        box-shadow: inherit;
+    }
+}
+
+
+.acordeon-pregunta {
+    font-family: $fuente-secundaria;
+    font-weight: 400;
+    font-size: 1rem;
+
+    @include tablet {
+        font-size: 1.2rem;
+    }
+
+    @include desktop {
+        font-size: 1.4rem;
+    }
+}
+
+.acordeon-respuesta {
+    font-family: $fuente-articulo;
+    font-weight: 400;
+    font-size: .9rem;
+
+    @include tablet {
+        font-size: 1rem;
+    }
+
+    @include desktop {
+        font-size: 1.1rem;
+    }
+
+}

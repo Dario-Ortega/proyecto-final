@@ -1,0 +1,73 @@
+.bc-footer {
+    background-color: $color-secundario;
+}
+
+.redes-titulo {
+    @extend %footer;
+
+}
+
+.fb {
+    font-size: 35px;
+    @extend %fb;
+}
+
+.tw {
+    font-size: 35px;
+    @extend %tw;
+}
+
+.yt {
+    font-size: 35px;
+    @extend %yt;
+}
+
+.it {
+    font-size: 35px;
+    @extend %it;
+}
+
+.localizacion a {
+    @include texto($fuente-principal , 1.438rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
+    line-height: 50px;
+
+
+    & i {
+        color: $color-letra;
+        font-size: 30px;
+
+        @include desktop {
+
+            &:hover {
+                color: map-get($redes , youtube);
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.ayuda {
+    @extend %footer;
+
+    &-parrafo {
+        @include texto($fuente-principal , .875rem, 700, $color-letra , $sombra-letra , uppercase, none, center);
+        line-height: 50px;
+
+
+        @include tablet {
+            font-size: 15px;
+        }
+
+        @include desktop {
+            font-size: 16px;
+        }
+    }
+
+}
+
+.marca,
+a {
+    color: $color-letra;
+    font-family: $fuente-principal;
+
+}

@@ -91,7 +91,7 @@
 
 //Boton Articulo
 %art-btn {
-    @include texto($fuente-articulo , 1rem , 400 , $color-letra , $sombra-letra-btn , uppercase , none , center);
+    @include texto($fuente-articulo , 1rem, 400, $color-letra , $sombra-letra-btn , uppercase, none, center);
     padding: .8rem 2rem;
     background: $color-boton;
     border: 2px solid $color-boton;
@@ -112,6 +112,72 @@
             background: $color-hover;
             transition: .3s;
             color: $color-letra;
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+//Botones Redes
+%fb {
+    color: map-get($redes, redes);
+    text-shadow: $sombra-letra;
+
+    @include desktop {
+
+        &:hover {
+            color: map-get($redes, facebook);
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+%tw {
+    color: map-get($redes, redes);
+    text-shadow: $sombra-letra;
+
+    @include desktop {
+
+        &:hover {
+            color: map-get($redes, twitter);
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+%yt {
+    color: map-get($redes, redes);
+    text-shadow: $sombra-letra;
+
+    @include desktop {
+
+        &:hover {
+            color: map-get($redes, youtube);
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+%it {
+    color: map-get($redes, redes);
+    text-shadow: $sombra-letra;
+
+    @include desktop {
+
+        &:hover {
+            color: map-get($redes, instagram);
+            transition: .3s ease-in-out;
+        }
+    }
+}
+
+%ws {
+    color: map-get($redes, redes);
+    text-shadow: $sombra-letra;
+
+    @include desktop {
+
+        &:hover {
+            color: map-get($redes, whatsapp);
             transition: .3s ease-in-out;
         }
     }

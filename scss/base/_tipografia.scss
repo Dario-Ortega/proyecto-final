@@ -40,3 +40,16 @@
         font-size: 1.5rem;
     }
 }
+
+%footer {
+    @include texto($fuente-principal , 1.125rem , 700 , $color-letra , $sombra-letra , uppercase , .1rem , center);
+    
+
+    @include tablet {
+        font-size: 1.25rem;
+    }
+
+    @include desktop {
+        font-size: 1.438rem;
+    }
+}

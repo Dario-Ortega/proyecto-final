@@ -83,6 +83,27 @@ a {
   }
 }
 
+.ayuda, .redes-titulo {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .ayuda, .redes-titulo {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .ayuda, .redes-titulo {
+    font-size: 1.438rem;
+  }
+}
+
 .bc-fondo {
   background-color: #e85d04;
 }
@@ -188,6 +209,76 @@ a {
     width: 400px;
     height: 400px;
   }
+}
+
+.bc-footer {
+  background-color: #f48c06;
+}
+
+.fb {
+  font-size: 35px;
+}
+
+.tw {
+  font-size: 35px;
+}
+
+.yt {
+  font-size: 35px;
+}
+
+.it {
+  font-size: 35px;
+}
+
+.localizacion a {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.438rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  line-height: 50px;
+}
+.localizacion a i {
+  color: #fff;
+  font-size: 30px;
+}
+@media (min-width: 1200px) {
+  .localizacion a i:hover {
+    color: #cd201f;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.ayuda-parrafo {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: none;
+  text-align: center;
+  line-height: 50px;
+}
+@media (min-width: 768px) {
+  .ayuda-parrafo {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .ayuda-parrafo {
+    font-size: 16px;
+  }
+}
+
+.marca,
+a {
+  color: #fff;
+  font-family: "Roboto Slab", serif;
 }
 
 .portada {
@@ -399,6 +490,50 @@ a {
     background: #0d6efd;
     transition: 0.3s;
     color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.fb {
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+@media (min-width: 1200px) {
+  .fb:hover {
+    color: #3b5998;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.tw {
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+@media (min-width: 1200px) {
+  .tw:hover {
+    color: #55acee;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.yt {
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+@media (min-width: 1200px) {
+  .yt:hover {
+    color: #cd201f;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.it {
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+@media (min-width: 1200px) {
+  .it:hover {
+    color: #e4405f;
     transition: 0.3s ease-in-out;
   }
 }

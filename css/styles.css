@@ -162,7 +162,7 @@ a {
 }
 
 .acceder-form i {
-  font-size: 35px;
+  font-size: 2.188rem;
   margin-right: 10px;
 }
 
@@ -183,6 +183,37 @@ a {
 .contacto-formulario textarea {
   height: auto;
   resize: none;
+}
+
+.registro-formulario input {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #292525;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 1px solid #797979;
+  margin: 10px 30px;
+  padding: 5px 10px;
+  caret-color: #e85d04;
+}
+@media (min-width: 768px) {
+  .registro-formulario input {
+    font-size: 1.438rem;
+  }
+}
+.registro-formulario input:active, .registro-formulario input:focus {
+  outline: none;
+}
+
+.cont-checkbox-1,
+.cont-checkbox-2 {
+  text-align: center;
 }
 
 .novedades-producto {
@@ -305,6 +336,25 @@ a {
   }
   .contacto {
     grid-template: "titulo   formulario" auto "detalles formulario" 1fr "redes    formulario" auto/1fr 1fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .registro-titulo {
+    grid-area: titulo;
+  }
+  .registro-detalles {
+    grid-area: detalles;
+  }
+  .registro-form {
+    grid-area: formulario;
+  }
+  .registro-redes {
+    grid-area: redes;
+  }
+  .registro {
+    grid-template: "titulo      titulo" auto "formulario  redes" auto/1fr 1fr;
     align-items: start;
   }
 }
@@ -528,6 +578,89 @@ a {
   }
 }
 
+.registro {
+  display: grid;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .registro {
+    font-size: 20px;
+    gap: 10px;
+  }
+}
+.registro-titulo {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #797979;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .registro-titulo {
+    font-size: 2.188rem;
+  }
+}
+.registro-formulario {
+  display: grid;
+  gap: 20px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
+}
+.registro-formulario-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.registro label {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #292525;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .registro label {
+    font-size: 1rem;
+  }
+}
+.registro-redes-titulo {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.registro-redes {
+  padding: 30px;
+  display: grid;
+  background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+  gap: 25px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1200px) {
+  .registro-redes {
+    padding: 140px 30px;
+  }
+}
+.registro-redes a i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
 .btn-primary {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
@@ -572,7 +705,7 @@ a {
   font-size: 1rem;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-weight: 700;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   transition: 0.3s ease;
@@ -737,6 +870,112 @@ a {
   border: 1px solid #fff;
   color: #fff;
   transition: 0.3s ease-in-out;
+}
+
+.registro-formulario-submit {
+  width: 100%;
+  height: 50px;
+  background-color: #ff5400;
+  border-radius: 7px;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .registro-formulario-submit:hover {
+    background-color: #0d6efd;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.registro-redes a {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 15px 0;
+  padding: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .registro-redes a {
+    font-size: 1.125rem;
+    padding: 13px;
+    margin: 12px 0;
+  }
+  .registro-redes a i {
+    font-size: 1.25rem;
+  }
+}
+
+.fb-r {
+  background: #3b5998;
+  border-style: none;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .fb-r:hover {
+    background: #fff;
+    color: #3b5998;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.tw-r {
+  background: #55acee;
+  border-style: none;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .tw-r:hover {
+    background: #fff;
+    color: #55acee;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.gg-r {
+  background: #cd201f;
+  border-style: none;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .gg-r:hover {
+    background: #fff;
+    color: #cd201f;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.it-r {
+  background: #e4405f;
+  border-style: none;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .it-r:hover {
+    background: #fff;
+    color: #e4405f;
+    transition: 0.5s ease-in-out;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

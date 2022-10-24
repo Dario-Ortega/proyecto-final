@@ -17,7 +17,7 @@
 }
 
 .acceder-form i{
-    font-size: 35px;
+    font-size: 2.188rem;
     margin-right: 10px;
 }
 
@@ -40,3 +40,32 @@
     height: auto;
     resize: none;
 }
+
+//Formulario Registro
+.registro-formulario input {
+    @include texto($fuente-principal , 1.125rem, 700, $color-letra-art , none , none, .2rem, center);
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid $titulo-registro;
+    margin: 10px 30px;
+    padding: 5px 10px;
+    caret-color: $color-principal;
+
+    @include tablet{
+        font-size: 1.438rem;
+    }
+
+    &:active,
+    &:focus {
+    outline: none;
+}
+}
+
+.cont-checkbox-1,
+.cont-checkbox-2 {
+    text-align: center;
+}
+
+
+

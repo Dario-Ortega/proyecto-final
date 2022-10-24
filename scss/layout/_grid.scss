@@ -27,3 +27,34 @@
         }
     }
     }
+
+//Seccion Registro
+    .registro {
+        @include desktop {
+    
+            &-titulo {
+                grid-area: titulo;
+            }
+    
+            &-detalles {
+                grid-area: detalles;
+            }
+    
+            &-form {
+                grid-area: formulario;
+            }
+    
+            &-redes {
+                grid-area: redes;
+            }
+    
+            & {
+                grid-template:
+                    "titulo      titulo" auto 
+                    "formulario  redes"  auto
+                    / 1fr          1fr;
+                align-items: start;
+            }
+    
+        }
+    }

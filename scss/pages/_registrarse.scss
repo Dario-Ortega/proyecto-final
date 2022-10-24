@@ -1,0 +1,65 @@
+.registro {
+    display: grid;
+    margin-top: 10px;
+
+    @include tablet {
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    &-titulo {
+        @include texto($fuente-principal , 1.8rem, 700, $titulo-registro , none, uppercase, .2rem, center);
+
+        @include tablet {
+            font-size: 2.188rem;
+        }
+    }
+
+    &-formulario {
+        display: grid;
+        gap: 20px;
+        width: auto;
+        height: auto;
+        box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
+    }
+
+    &-formulario-grupo {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        
+    }
+
+    & label {
+        @include texto($fuente-principal , .9rem, 700, $color-letra-art , none, none, .1rem, center);
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &-redes-titulo {
+        @include texto($fuente-principal , 1.6rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
+    }
+
+    &-redes {
+        padding: 30px;
+        display: grid;
+        background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+        gap: 25px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+
+        @include desktop {
+            padding: 140px 30px;
+        }
+
+        & a i {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+    }
+}

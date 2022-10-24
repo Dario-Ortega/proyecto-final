@@ -33,28 +33,42 @@
     align-items: center;
 }
 
-@mixin display ($display , $justify , $align){
+@mixin display ($display , $justify , $align) {
     display: $display;
     justify-content: $justify;
     align-items: $align;
 }
 
-@mixin flex-art{
+@mixin flex-art {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-@mixin slider{
+@mixin slider {
     display: flex;
     flex-direction: row;
     gap: 5px;
     overflow: auto;
 }
 
-@mixin wrap{
+@mixin wrap {
     flex-wrap: wrap;
     flex-direction: unset;
     justify-content: center;
+}
+
+@mixin redes ($background , $border , $color , $text , $transition) {
+    background: map-get($redes , $background );
+    border-style: $border;
+    color: $color;
+    text-align: $text;
+    transition: $transition;
+}
+
+@mixin redes-hover ($background , $color , $transition) {
+    background: $background;
+    color: map-get($redes , $color );
+    transition: $transition;
 }

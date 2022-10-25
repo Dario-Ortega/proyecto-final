@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.preguntas-titulo, .novedades-titulo {
+.consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
   background-color: #f3722c;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -27,21 +27,21 @@ a {
   margin: 10px 0;
 }
 @media (min-width: 768px) {
-  .preguntas-titulo, .novedades-titulo {
+  .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
     font-size: 1.9rem;
     letter-spacing: 0.2rem;
     padding: 13px;
   }
 }
 @media (min-width: 1200px) {
-  .preguntas-titulo, .novedades-titulo {
+  .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
     font-size: 2.2rem;
     letter-spacing: 0.3rem;
     padding: 16px;
   }
 }
 
-.novedades-titulo-producto {
+.consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
@@ -52,17 +52,17 @@ a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .novedades-titulo-producto {
+  .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-titulo-producto {
+  .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
     font-size: 1.6rem;
   }
 }
 
-.novedades-precio {
+.consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
@@ -73,12 +73,12 @@ a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .novedades-precio {
+  .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-precio {
+  .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
     font-size: 1.5rem;
   }
 }
@@ -216,7 +216,7 @@ a {
   text-align: center;
 }
 
-.novedades-producto {
+.consolas__producto, .perifericos__producto, .pc__producto, .hardware__producto, .novedades-producto {
   margin: 15px;
   width: 350px;
   height: 490px;
@@ -228,34 +228,34 @@ a {
   transition: all 600ms ease-in-out;
 }
 @media (min-width: 768px) {
-  .novedades-producto {
+  .consolas__producto, .perifericos__producto, .pc__producto, .hardware__producto, .novedades-producto {
     width: 380px;
     height: 510px;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-producto {
+  .consolas__producto, .perifericos__producto, .pc__producto, .hardware__producto, .novedades-producto {
     width: 400px;
     height: 570px;
   }
-  .novedades-producto:hover {
+  .consolas__producto:hover, .perifericos__producto:hover, .pc__producto:hover, .hardware__producto:hover, .novedades-producto:hover {
     transform: translateY(-0.35rem) scale(1.02);
     box-shadow: 0 1px 10px 1px rgb(3, 3, 3);
   }
 }
 
-.novedades-img {
+.consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
   width: 350px;
   height: 350px;
 }
 @media (min-width: 768px) {
-  .novedades-img {
+  .consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
     width: 380px;
     height: 360px;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-img {
+  .consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
     width: 400px;
     height: 400px;
   }
@@ -661,6 +661,110 @@ a {
   left: 12px;
 }
 
+.hardware__art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .hardware__art {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .hardware__art {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+  }
+}
+.hardware__cont--boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pc__art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .pc__art {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .pc__art {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+  }
+}
+.pc__cont--boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perifericos__art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .perifericos__art {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .perifericos__art {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+  }
+}
+.perifericos__cont--boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consolas__art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .consolas__art {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .consolas__art {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+  }
+}
+.consolas__cont--boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn-primary {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
@@ -758,7 +862,7 @@ a {
   transition: 0.3s ease;
 }
 
-.novedades-boton {
+.novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -774,17 +878,17 @@ a {
   border-radius: 0.3rem;
 }
 @media (min-width: 768px) {
-  .novedades-boton {
+  .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton {
     padding: 0.9rem 2.1rem;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-boton {
+  .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton {
     padding: 1rem 2.3rem;
     font-size: 1.4rem;
   }
-  .novedades-boton:hover {
+  .novedades-boton:hover, .hardware__boton:hover, .pc__boton:hover, .perifericos__boton:hover, .consolas__boton:hover {
     border: 2px solid #0d6efd;
     background: #0d6efd;
     transition: 0.3s;

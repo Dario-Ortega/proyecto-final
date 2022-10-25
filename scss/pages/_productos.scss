@@ -1,0 +1,187 @@
+.productos{
+    @extend %tytle;
+}
+
+//Secion Hardware
+
+.hardware {
+
+    &__titulo {
+        @extend %tytle;
+    }
+
+    &__art {
+        @include flex-art();
+
+        @include movile{
+            @include slider();
+        }
+    
+        @include desktop{
+            @include wrap();
+        }
+    }
+
+    &__producto{
+        @extend %articulo;
+    }
+
+    &__img {
+        @extend %art-img;
+    }
+
+    &__titulo--producto {
+        @extend %art-tytle;
+    }
+
+    &__cont--boton {
+        @include flex-center();
+    }
+
+    &__precio {
+        @extend %precio-tytle;
+    }
+
+    &__boton {
+        @extend %art-btn;
+    }
+
+}
+
+//Secion Pc
+
+.pc {
+
+    &__titulo {
+        @extend %tytle;
+    }
+
+    &__art {
+        @include flex-art();
+
+        @include movile{
+            @include slider();
+        }
+    
+        @include desktop{
+            @include wrap();
+        }
+    }
+
+    &__producto{
+        @extend %articulo;
+    }
+
+    &__img {
+        @extend %art-img;
+    }
+
+    &__titulo--producto {
+        @extend %art-tytle;
+    }
+
+    &__cont--boton {
+        @include flex-center();
+    }
+
+    &__precio {
+        @extend %precio-tytle;
+    }
+
+    &__boton {
+        @extend %art-btn;
+    }
+
+}
+
+//Secion Perifericos
+
+.perifericos {
+
+    &__titulo {
+        @extend %tytle;
+    }
+
+    &__art {
+        @include flex-art();
+
+        @include movile{
+            @include slider();
+        }
+    
+        @include desktop{
+            @include wrap();
+        }
+    }
+
+    &__producto{
+        @extend %articulo;
+    }
+
+    &__img {
+        @extend %art-img;
+    }
+
+    &__titulo--producto {
+        @extend %art-tytle;
+    }
+
+    &__cont--boton {
+        @include flex-center();
+    }
+
+    &__precio {
+        @extend %precio-tytle;
+    }
+
+    &__boton {
+        @extend %art-btn;
+    }
+
+}
+
+//Secion Consolas
+
+.consolas {
+
+    &__titulo {
+        @extend %tytle;
+    }
+
+    &__art {
+        @include flex-art();
+
+        @include movile{
+            @include slider();
+        }
+    
+        @include desktop{
+            @include wrap();
+        }
+    }
+
+    &__producto{
+        @extend %articulo;
+    }
+
+    &__img {
+        @extend %art-img;
+    }
+
+    &__titulo--producto {
+        @extend %art-tytle;
+    }
+
+    &__cont--boton {
+        @include flex-center();
+    }
+
+    &__precio {
+        @extend %precio-tytle;
+    }
+
+    &__boton {
+        @extend %art-btn;
+    }
+
+}

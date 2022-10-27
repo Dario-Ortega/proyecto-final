@@ -1,3 +1,4 @@
+//Articulos Productos y Novedades
 %articulo {
     margin: 15px;
     width: 350px;
@@ -25,15 +26,88 @@
 
 %art-img{
         width: 350px;
-        height: 350px;
+        height: 330px;
 
         @include tablet {
             width: 380px;
-            height: 360px;
+            height: 340px;
         }
 
         @include desktop {
             width: 400px;
-            height: 400px;
+            height: 380px;
         }
     }
+
+
+//Articulo Juegos
+%art-juegos{
+    margin: 15px;
+    width: 350px;
+    height: 505px;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
+    @include display (block , center , center);
+    background: $color-articulo;
+    transition: all 600ms ease-in-out;
+
+    @include tablet {
+        width: 380px;
+        height: 525px;
+    }
+
+    @include desktop {
+        width: 400px;
+        height: 585px;
+
+        &:hover {
+            transform: translateY(-.35rem) scale(1.02);
+            box-shadow: 0 1px 10px 1px rgb(3, 3, 3);
+        }
+    }
+}
+
+%img-juegos{
+    width: 350px;
+    height: 330px;
+
+    @include tablet {
+        width: 380px;
+        height: 340px;
+    }
+
+    @include desktop {
+        width: 400px;
+        height: 380px;
+    }
+}
+
+//Stock
+.poco{
+    @include texto ($fuente-articulo , 1rem , 400 , $color-letra , $sombra-letra , none , none , center);
+    
+    @include stock (1px , solid , poco , 10px , 10px , poco , absolute , 4px , 4px);
+
+    @include desktop{
+        font-size: 1.1rem;
+    }
+}
+
+.sin{
+    @include texto ($fuente-articulo , 1rem , 400 , $color-letra , $sombra-letra , none , none , center);
+    
+    @include stock (1px , solid , sin , 10px , 10px , sin , absolute , 4px , 4px);
+
+    @include desktop{
+        font-size: 1.1rem;
+    }
+}
+
+.oferta{
+    @include texto ($fuente-articulo , 1rem , 400 , $color-letra , $sombra-letra , none , none , center);
+    
+    @include stock (1px , solid , oferta , 10px , 10px , oferta , absolute , 4px , 4px);
+
+    @include desktop{
+        font-size: 1.1rem;
+    }
+}

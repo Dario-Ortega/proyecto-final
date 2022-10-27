@@ -97,6 +97,7 @@
     border: 2px solid $color-boton;
     cursor: pointer;
     border-radius: .3rem;
+    transition: .3s ease-in-out;
 
     @include tablet {
         padding: .9rem 2.1rem;

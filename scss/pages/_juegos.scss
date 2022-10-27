@@ -1,0 +1,143 @@
+.juegos {
+
+    &__titulo {
+        @extend %tytle;
+    }
+
+    &__art {
+        @include flex-art();
+
+        @include movile {
+            @include slider();
+            margin-top: 10px;
+        }
+
+        @include desktop {
+            @include wrap();
+            margin-top: 0;
+        }
+    }
+
+    &__producto {
+        @extend %art-juegos;
+    }
+
+    &__img {
+        @extend %img-juegos;
+    }
+
+    &__titulo--producto {
+        height: 53px;
+        @extend %art-tytle;
+        @include flex-center();
+    }
+
+    &__cont--boton {
+        @include flex-center();
+    }
+
+    &__precio {
+        @extend %precio-tytle;
+        margin: 0;
+    }
+
+    &__boton {
+        @extend %art-btn;
+    }
+
+}
+
+//Categorias
+.juegos__genero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+        margin: 0 3px;
+
+        @include desktop {
+            margin-top: 5px;
+        }
+    }
+}
+
+.rpg {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, rpg, 5px, rpg);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.accion {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, accion, 5px, accion);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.single-player {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, single-player, 5px, single-player);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.multiplayer {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, multiplayer, 5px, multiplayer);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.simulacion {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, simulacion, 5px, simulacion);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.aventura {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, aventura, 5px, aventura);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.estrategia {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, estrategia, 5px, estrategia);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+.fps {
+    @include texto ($fuente-articulo , .9rem, 400, $color-letra , $sombra-letra , none, none, center);
+
+    @include categorias (1px, solid, fps, 5px, fps);
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}

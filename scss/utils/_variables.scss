@@ -20,7 +20,7 @@ $color-articulo: #ced4da;
 
 $titulo-registro: #797979;
 
-
+//Color Redes
 $redes: (
     "redes": #fff,
 
@@ -34,6 +34,34 @@ $redes: (
 
     "whatsapp": #43d854
     );
+
+//Color Caterorias
+$categorias: (
+    "estrategia": #00378a,
+
+    "accion": #9f2020,
+
+    "simulacion": #457b9d,
+
+    "aventura": #7b31c5,
+
+    "fps": #213974,
+
+    "rpg": #24b078,
+
+    "single-player": #343a40,
+
+    "multiplayer": #fca311
+);
+
+//Color Stock
+$stock: (
+    "poco": #ca6702,
+
+    "sin": #e13030,
+
+    "oferta": #ff5400
+);
 
 
 $fuente-principal: 'Roboto Slab', serif;

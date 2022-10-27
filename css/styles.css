@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
+.juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
   background-color: #f3722c;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -27,42 +27,42 @@ a {
   margin: 10px 0;
 }
 @media (min-width: 768px) {
-  .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
+  .juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
     font-size: 1.9rem;
     letter-spacing: 0.2rem;
     padding: 13px;
   }
 }
 @media (min-width: 1200px) {
-  .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
+  .juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades-titulo {
     font-size: 2.2rem;
     letter-spacing: 0.3rem;
     padding: 16px;
   }
 }
 
-.consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
+.juegos__titulo--producto, .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
   color: #292525;
   text-shadow: 0.1rem 0.1rem 0.1rem #4b4b4b;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: none;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
+  .juegos__titulo--producto, .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 1200px) {
-  .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
+  .juegos__titulo--producto, .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
     font-size: 1.6rem;
   }
 }
 
-.consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
+.juegos__precio, .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
@@ -73,12 +73,12 @@ a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
+  .juegos__precio, .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
-  .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
+  .juegos__precio, .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
     font-size: 1.5rem;
   }
 }
@@ -102,6 +102,10 @@ a {
   .ayuda, .redes-titulo {
     font-size: 1.438rem;
   }
+}
+
+.stock-oferta {
+  text-decoration: line-through;
 }
 
 .bc-fondo {
@@ -246,18 +250,138 @@ a {
 
 .consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
   width: 350px;
-  height: 350px;
+  height: 330px;
 }
 @media (min-width: 768px) {
   .consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
     width: 380px;
-    height: 360px;
+    height: 340px;
   }
 }
 @media (min-width: 1200px) {
   .consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
     width: 400px;
-    height: 400px;
+    height: 380px;
+  }
+}
+
+.juegos__producto {
+  margin: 15px;
+  width: 350px;
+  height: 505px;
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: #ced4da;
+  transition: all 600ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .juegos__producto {
+    width: 380px;
+    height: 525px;
+  }
+}
+@media (min-width: 1200px) {
+  .juegos__producto {
+    width: 400px;
+    height: 585px;
+  }
+  .juegos__producto:hover {
+    transform: translateY(-0.35rem) scale(1.02);
+    box-shadow: 0 1px 10px 1px rgb(3, 3, 3);
+  }
+}
+
+.juegos__img {
+  width: 350px;
+  height: 330px;
+}
+@media (min-width: 768px) {
+  .juegos__img {
+    width: 380px;
+    height: 340px;
+  }
+}
+@media (min-width: 1200px) {
+  .juegos__img {
+    width: 400px;
+    height: 380px;
+  }
+}
+
+.poco {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #ca6702;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #ca6702;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+@media (min-width: 1200px) {
+  .poco {
+    font-size: 1.1rem;
+  }
+}
+
+.sin {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #e13030;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #e13030;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+@media (min-width: 1200px) {
+  .sin {
+    font-size: 1.1rem;
+  }
+}
+
+.oferta {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #ff5400;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #ff5400;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+@media (min-width: 1200px) {
+  .oferta {
+    font-size: 1.1rem;
   }
 }
 
@@ -504,6 +628,9 @@ a {
     flex-direction: unset;
     justify-content: center;
   }
+}
+.novedades-titulo-producto {
+  height: 50px;
 }
 .novedades-cont-boton {
   display: flex;
@@ -765,6 +892,225 @@ a {
   justify-content: center;
   align-items: center;
 }
+.juegos__art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .juegos__art {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .juegos__art {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+.juegos__titulo--producto {
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.juegos__cont--boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.juegos__precio {
+  margin: 0;
+}
+.juegos__genero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.juegos__genero span {
+  margin: 0 3px;
+}
+@media (min-width: 1200px) {
+  .juegos__genero span {
+    margin-top: 5px;
+  }
+}
+
+.rpg {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #24b078;
+  border-radius: 5px;
+  background-color: #24b078;
+}
+@media (min-width: 1200px) {
+  .rpg {
+    font-size: 1rem;
+  }
+}
+
+.accion {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #9f2020;
+  border-radius: 5px;
+  background-color: #9f2020;
+}
+@media (min-width: 1200px) {
+  .accion {
+    font-size: 1rem;
+  }
+}
+
+.single-player {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #343a40;
+  border-radius: 5px;
+  background-color: #343a40;
+}
+@media (min-width: 1200px) {
+  .single-player {
+    font-size: 1rem;
+  }
+}
+
+.multiplayer {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #fca311;
+  border-radius: 5px;
+  background-color: #fca311;
+}
+@media (min-width: 1200px) {
+  .multiplayer {
+    font-size: 1rem;
+  }
+}
+
+.simulacion {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #457b9d;
+  border-radius: 5px;
+  background-color: #457b9d;
+}
+@media (min-width: 1200px) {
+  .simulacion {
+    font-size: 1rem;
+  }
+}
+
+.aventura {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #7b31c5;
+  border-radius: 5px;
+  background-color: #7b31c5;
+}
+@media (min-width: 1200px) {
+  .aventura {
+    font-size: 1rem;
+  }
+}
+
+.estrategia {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #00378a;
+  border-radius: 5px;
+  background-color: #00378a;
+}
+@media (min-width: 1200px) {
+  .estrategia {
+    font-size: 1rem;
+  }
+}
+
+.fps {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: none;
+  letter-spacing: none;
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-color: #213974;
+  border-radius: 5px;
+  background-color: #213974;
+}
+@media (min-width: 1200px) {
+  .fps {
+    font-size: 1rem;
+  }
+}
+
 .btn-primary {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
@@ -862,7 +1208,7 @@ a {
   transition: 0.3s ease;
 }
 
-.novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton {
+.novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton, .juegos__boton {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -876,19 +1222,20 @@ a {
   border: 2px solid #ff5400;
   cursor: pointer;
   border-radius: 0.3rem;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
-  .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton {
+  .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton, .juegos__boton {
     padding: 0.9rem 2.1rem;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
-  .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton {
+  .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton, .juegos__boton {
     padding: 1rem 2.3rem;
     font-size: 1.4rem;
   }
-  .novedades-boton:hover, .hardware__boton:hover, .pc__boton:hover, .perifericos__boton:hover, .consolas__boton:hover {
+  .novedades-boton:hover, .hardware__boton:hover, .pc__boton:hover, .perifericos__boton:hover, .consolas__boton:hover, .juegos__boton:hover {
     border: 2px solid #0d6efd;
     background: #0d6efd;
     transition: 0.3s;

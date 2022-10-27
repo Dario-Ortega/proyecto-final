@@ -1,3 +1,4 @@
+//Titulo Paginas o Seccion
 %tytle {
     background-color: $color-titulo;
     @include texto($fuente-titulo , 1.6rem , 700 , $color-letra , $sombra-letra , uppercase , .1rem , center);
@@ -17,8 +18,9 @@
     }
 }
 
+//Titulo Articulo
 %art-tytle {
-    @include texto($fuente-articulo , 1.3rem , 400 , $color-letra-art , $sombra-letra-btn , uppercase , none , center);
+    @include texto($fuente-articulo , 1.3rem , 400 , $color-letra-art , $sombra-letra-btn , none , none , center);
 
     @include tablet {
         font-size: 1.4rem;
@@ -29,6 +31,7 @@
     }
 }
 
+//Precio Articulo
 %precio-tytle {
     @include texto($fuente-articulo , 1.2rem , 400 , $color-letra-art , $sombra-letra-btn , uppercase , .1rem , center);
 
@@ -41,6 +44,7 @@
     }
 }
 
+//Footer
 %footer {
     @include texto($fuente-principal , 1.125rem , 700 , $color-letra , $sombra-letra , uppercase , .1rem , center);
     
@@ -52,4 +56,9 @@
     @include desktop {
         font-size: 1.438rem;
     }
+}
+
+//Stock
+.stock-oferta{
+    text-decoration: line-through;
 }

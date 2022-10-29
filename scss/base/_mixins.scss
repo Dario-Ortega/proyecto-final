@@ -73,7 +73,7 @@
     transition: $transition;
 }
 
-@mixin categorias ($border , $style , $border-color , $radius , $background){
+@mixin categorias ($border , $style , $border-color , $radius , $background) {
     border: $border;
     border-style: $style;
     border-color: map-get($categorias , $border-color);
@@ -81,7 +81,7 @@
     background-color: map-get($categorias , $background );
 }
 
-@mixin stock ($border , $style , $border-color , $right , $left , $background , $position , $margin-left , $margin-right){
+@mixin stock ($border , $style , $border-color , $right , $left , $background , $position , $margin-left , $margin-right) {
     border: $border;
     border-style: $style;
     border-color: map-get($stock , $border-color);
@@ -89,9 +89,6 @@
     border-top-left-radius: $left;
     background-color: map-get($stock , $background );
     position: $position;
-
     margin-left: $margin-left;
-
     margin-top: $margin-right;
-
 }

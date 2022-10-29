@@ -46,7 +46,7 @@ a {
   font-size: 1.3rem;
   font-weight: 400;
   color: #292525;
-  text-shadow: 0.1rem 0.1rem 0.1rem #4b4b4b;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.41);
   text-transform: none;
   letter-spacing: none;
   text-align: center;
@@ -58,7 +58,7 @@ a {
 }
 @media (min-width: 1200px) {
   .juegos__titulo--producto, .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto, .novedades-titulo-producto {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -67,10 +67,11 @@ a {
   font-size: 1.2rem;
   font-weight: 400;
   color: #292525;
-  text-shadow: 0.1rem 0.1rem 0.1rem #4b4b4b;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.41);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-align: center;
+  margin: 3px;
 }
 @media (min-width: 768px) {
   .juegos__precio, .consolas__precio, .perifericos__precio, .pc__precio, .hardware__precio, .novedades-precio {
@@ -223,7 +224,7 @@ a {
 .consolas__producto, .perifericos__producto, .pc__producto, .hardware__producto, .novedades-producto {
   margin: 15px;
   width: 350px;
-  height: 490px;
+  height: 495px;
   box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
   display: block;
   justify-content: center;
@@ -234,13 +235,13 @@ a {
 @media (min-width: 768px) {
   .consolas__producto, .perifericos__producto, .pc__producto, .hardware__producto, .novedades-producto {
     width: 380px;
-    height: 510px;
+    height: 520px;
   }
 }
 @media (min-width: 1200px) {
   .consolas__producto, .perifericos__producto, .pc__producto, .hardware__producto, .novedades-producto {
     width: 400px;
-    height: 570px;
+    height: 575px;
   }
   .consolas__producto:hover, .perifericos__producto:hover, .pc__producto:hover, .hardware__producto:hover, .novedades-producto:hover {
     transform: translateY(-0.35rem) scale(1.02);
@@ -262,6 +263,19 @@ a {
   .consolas__img, .perifericos__img, .pc__img, .hardware__img, .novedades-img {
     width: 400px;
     height: 380px;
+  }
+}
+
+.consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto {
+  height: 70px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .consolas__titulo--producto, .perifericos__titulo--producto, .pc__titulo--producto, .hardware__titulo--producto {
+    height: 77px;
   }
 }
 
@@ -1217,7 +1231,7 @@ a {
   text-transform: uppercase;
   letter-spacing: none;
   text-align: center;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.9rem;
   background: #ff5400;
   border: 2px solid #ff5400;
   cursor: pointer;
@@ -1226,13 +1240,13 @@ a {
 }
 @media (min-width: 768px) {
   .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton, .juegos__boton {
-    padding: 0.9rem 2.1rem;
+    padding: 0.9rem 2rem;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
   .novedades-boton, .hardware__boton, .pc__boton, .perifericos__boton, .consolas__boton, .juegos__boton {
-    padding: 1rem 2.3rem;
+    padding: 1rem 2.1rem;
     font-size: 1.4rem;
   }
   .novedades-boton:hover, .hardware__boton:hover, .pc__boton:hover, .perifericos__boton:hover, .consolas__boton:hover, .juegos__boton:hover {

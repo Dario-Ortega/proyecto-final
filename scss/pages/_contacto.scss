@@ -1,4 +1,4 @@
-.preguntas-titulo {
+.preguntas__titulo {
     @extend %tytle;
 }
 
@@ -23,7 +23,7 @@
         }
     }
 
-    &-titulo {
+    &__titulo {
         @include texto($fuente-principal , 1.6rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
 
         @include tablet {
@@ -35,24 +35,24 @@
         }
     }
 
-    &-detalles,
-    &-formulario {
+    &__detalles,
+    &__formulario {
         display: grid;
         gap: 20px;
     }
 
-    &-formulario-grupo {
+    &__formulario--grupo {
         display: grid;
         gap: 3px;
     }
 
-    &-redes-cont {
+    &__redes--cont {
         display: flex;
         gap: 25px;
         justify-content: center;
     }
 
-    &-redes-iconos i {
+    &__redes--iconos i {
         font-size: 30px;
 
         @include tablet {
@@ -62,18 +62,18 @@
 
 }
 
-.r-fb {
+.r__fb {
     @extend %fb;
 }
 
-.r-tw {
+.r__tw {
     @extend %tw;
 }
 
-.r-it {
+.r__it {
     @extend %it;
 }
 
-.r-wt {
+.r__wt {
     @extend %ws;
 }

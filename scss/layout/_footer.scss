@@ -36,13 +36,6 @@
         color: $color-letra;
         font-size: 30px;
 
-        @include desktop {
-
-            &:hover {
-                color: map-get($redes , youtube);
-                transition: .3s ease-in-out;
-            }
-        }
     }
 }
 

@@ -1,19 +1,19 @@
 //Seccion Contacto
 .contacto{
     @include tablet{
-        &-titulo {
+        &__titulo {
             grid-area: titulo;
         }
     
-        &-detalles {
+        &__detalles {
             grid-area: detalles;
         }
     
-        &-formulario {
+        &__formulario {
             grid-area: formulario;
         }
     
-        &-redes {
+        &__redes {
             grid-area: redes;
         }
     

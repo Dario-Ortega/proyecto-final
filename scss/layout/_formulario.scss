@@ -22,8 +22,8 @@
 }
 
 //Formulario Contacto
-.contacto-formulario input,
-.contacto-formulario textarea {
+.contacto__formulario input,
+.contacto__formulario textarea {
     border-radius: 7px;
     border: none;
     height: 40px;
@@ -36,7 +36,7 @@
 }
 }
 
-.contacto-formulario textarea {
+.contacto__formulario textarea {
     height: auto;
     resize: none;
 }

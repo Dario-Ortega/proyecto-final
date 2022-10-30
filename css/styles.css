@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades__titulo {
+.juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas__titulo, .novedades__titulo {
   background-color: #f3722c;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -27,14 +27,14 @@ a {
   margin: 10px 0;
 }
 @media (min-width: 768px) {
-  .juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades__titulo {
+  .juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas__titulo, .novedades__titulo {
     font-size: 1.9rem;
     letter-spacing: 0.2rem;
     padding: 13px;
   }
 }
 @media (min-width: 1200px) {
-  .juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas-titulo, .novedades__titulo {
+  .juegos__titulo, .consolas__titulo, .perifericos__titulo, .pc__titulo, .hardware__titulo, .productos, .preguntas__titulo, .novedades__titulo {
     font-size: 2.2rem;
     letter-spacing: 0.3rem;
     padding: 16px;
@@ -171,21 +171,21 @@ a {
   margin-right: 10px;
 }
 
-.contacto-formulario input,
-.contacto-formulario textarea {
+.contacto__formulario input,
+.contacto__formulario textarea {
   border-radius: 7px;
   border: none;
   height: 40px;
   padding: 5px 10px;
   caret-color: #e85d04;
 }
-.contacto-formulario input:active, .contacto-formulario input:focus,
-.contacto-formulario textarea:active,
-.contacto-formulario textarea:focus {
+.contacto__formulario input:active, .contacto__formulario input:focus,
+.contacto__formulario textarea:active,
+.contacto__formulario textarea:focus {
   outline: none;
 }
 
-.contacto-formulario textarea {
+.contacto__formulario textarea {
   height: auto;
   resize: none;
 }
@@ -427,49 +427,49 @@ a {
   box-shadow: inherit;
 }
 
-.acordeon-pregunta {
+.acordeon__pregunta {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  .acordeon-pregunta {
+  .acordeon__pregunta {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
-  .acordeon-pregunta {
+  .acordeon__pregunta {
     font-size: 1.4rem;
   }
 }
 
-.acordeon-respuesta {
+.acordeon__respuesta {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
 }
 @media (min-width: 768px) {
-  .acordeon-respuesta {
+  .acordeon__respuesta {
     font-size: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .acordeon-respuesta {
+  .acordeon__respuesta {
     font-size: 1.1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .contacto-titulo {
+  .contacto__titulo {
     grid-area: titulo;
   }
-  .contacto-detalles {
+  .contacto__detalles {
     grid-area: detalles;
   }
-  .contacto-formulario {
+  .contacto__formulario {
     grid-area: formulario;
   }
-  .contacto-redes {
+  .contacto__redes {
     grid-area: redes;
   }
   .contacto {
@@ -531,12 +531,6 @@ a {
 .localizacion a i {
   color: #fff;
   font-size: 30px;
-}
-@media (min-width: 1200px) {
-  .localizacion a i:hover {
-    color: #cd201f;
-    transition: 0.3s ease-in-out;
-  }
 }
 
 .ayuda-parrafo {
@@ -674,7 +668,7 @@ a {
     font-size: 1.3rem;
   }
 }
-.contacto-titulo {
+.contacto__titulo {
   font-family: "Roboto Slab", serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -685,33 +679,33 @@ a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .contacto-titulo {
+  .contacto__titulo {
     font-size: 2.1rem;
   }
 }
 @media (min-width: 1200px) {
-  .contacto-titulo {
+  .contacto__titulo {
     font-size: 2.5rem;
   }
 }
-.contacto-detalles, .contacto-formulario {
+.contacto__detalles, .contacto__formulario {
   display: grid;
   gap: 20px;
 }
-.contacto-formulario-grupo {
+.contacto__formulario--grupo {
   display: grid;
   gap: 3px;
 }
-.contacto-redes-cont {
+.contacto__redes--cont {
   display: flex;
   gap: 25px;
   justify-content: center;
 }
-.contacto-redes-iconos i {
+.contacto__redes--iconos i {
   font-size: 30px;
 }
 @media (min-width: 768px) {
-  .contacto-redes-iconos i {
+  .contacto__redes--iconos i {
     font-size: 35px;
   }
 }
@@ -1255,23 +1249,25 @@ a {
   }
 }
 
-.fb, .r-fb {
+.fb, .r__fb {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .fb:hover, .r-fb:hover {
+  .fb:hover, .r__fb:hover {
     color: #3b5998;
     transition: 0.3s ease-in-out;
   }
 }
 
-.tw, .r-tw {
+.tw, .r__tw {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .tw:hover, .r-tw:hover {
+  .tw:hover, .r__tw:hover {
     color: #55acee;
     transition: 0.3s ease-in-out;
   }
@@ -1280,6 +1276,7 @@ a {
 .yt {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 1200px) {
   .yt:hover {
@@ -1288,29 +1285,31 @@ a {
   }
 }
 
-.it, .r-it {
+.it, .r__it {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .it:hover, .r-it:hover {
+  .it:hover, .r__it:hover {
     color: #e4405f;
     transition: 0.3s ease-in-out;
   }
 }
 
-.r-wt {
+.r__wt {
   color: #fff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 1200px) {
-  .r-wt:hover {
+  .r__wt:hover {
     color: #43d854;
     transition: 0.3s ease-in-out;
   }
 }
 
-.contacto-formulario-submit {
+.contacto__formulario--submit {
   width: 100%;
   height: 50px;
   background-color: #292525;
@@ -1326,7 +1325,7 @@ a {
   font-weight: 700;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
 }
-.contacto-formulario-submit:hover {
+.contacto__formulario--submit:hover {
   background-color: #0d6efd;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
   border: 1px solid #fff;

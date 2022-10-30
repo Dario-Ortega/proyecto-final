@@ -103,7 +103,7 @@
             </div>
         </nav>
 
-        <!-- Modal -->
+        <!-- Modal Inicio de Sesion -->
 
         <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion" aria-hidden="true">
 
@@ -114,6 +114,8 @@
                     <div class="modal-header">
 
                         <h1 class="modal-title" id="iniciar-sesion">Iniciar Sesion</h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                     </div>
 
@@ -164,7 +166,7 @@
             </div>
         </div>
 
-        <!-- Final del Modal -->
+        <!-- Final del Modal Inicio de Sesion -->
 
     </header>
 
@@ -712,16 +714,16 @@
             </div>
 
         </section>
+
+        <!-- SVG Wave-->
+
+        <div style="height: 50px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-19.68,64.09 C149.99,150.00 317.18,14.08 508.43,81.08 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(244, 140, 6);"></path>
+            </svg></div>
+
     </main>
-
-
-    <!-- SVG Wave-->
-
-    <div style="height: 50px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M-19.68,64.09 C149.99,150.00 317.18,14.08 508.43,81.08 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: rgb(244, 140, 6);"></path>
-        </svg></div>
 
     <footer class="container-fluid bc-footer c-blanco footer">
 
@@ -748,7 +750,8 @@
                 </div>
 
                 <div class="d-flex justify-content-around p-3 fs-3 col-xl-4 localizacion">
-                    <a href="./pages/puntos-ventas.html"><i class="bi bi-geo-alt-fill"></i>Puntos de Venta</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#punto-venta"><i
+                            class="bi bi-geo-alt-fill"></i>Punto de Venta</a>
                 </div>
 
                 <div class="text-center py-3 col-xl-4">
@@ -770,6 +773,36 @@
                 Todos los derechos reservados 2017 </p>
 
         </div>
+
+        <!-- Modal Punto de Venta -->
+
+        <div class="modal fade" id="punto-venta" tabindex="-1" aria-labelledby="punto-venta" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h1 class="modal-title" id="punto-venta">Punto de Venta</h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="modal-body">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.599493494628!2d-58.4511806!3d-34.6003715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e712bd23c7ce4ba!2sCOMPRA%20GAMER!5e0!3m2!1ses-419!2sar!4v1667160947249!5m2!1ses-419!2sar"
+                            style="border:0;" height="400" class="map__venta" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Modal Punto de Venta -->
+
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

@@ -561,6 +561,10 @@ a {
   font-family: "Roboto Slab", serif;
 }
 
+.map__venta {
+  width: 100%;
+}
+
 .portada {
   height: 70vh;
   background-image: url(../assets/img/fondos/fondo-1.jpg);

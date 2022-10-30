@@ -102,7 +102,7 @@
             </div>
         </nav>
 
-        <!-- Modal -->
+        <!-- Modal Inicio de Sesion -->
 
         <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion" aria-hidden="true">
 
@@ -113,6 +113,8 @@
                     <div class="modal-header">
 
                         <h1 class="modal-title" id="iniciar-sesion">Iniciar Sesion</h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                     </div>
 
@@ -163,7 +165,7 @@
             </div>
         </div>
 
-        <!-- Final del Modal -->
+        <!-- Final del Modal Inicio de Sesion -->
 
     </header>
 
@@ -584,59 +586,93 @@
 
         <!-- Final Seccion Contacto -->
 
+        <!-- SVG Wave-->
+
+        <div style="height: 50px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-19.68,64.09 C149.99,150.00 317.18,14.08 508.43,81.08 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(244, 140, 6);"></path>
+            </svg></div>
+
     </main>
 
+    <footer class="container-fluid bc-footer c-blanco footer">
 
-    <!-- SVG Wave-->
+        <div class="container">
 
-    <div style="height: 50px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M-19.68,64.09 C149.99,150.00 317.18,14.08 508.43,81.08 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: rgb(244, 140, 6);"></path>
-        </svg></div>
+            <div class="row align-items-center justify-content-between border-bottom">
 
-    <footer>
-        <footer class="container-fluid bc-footer c-blanco footer">
+                <div class="py-3 col-xl-4 redes">
 
-            <div class="container">
+                    <h3 class="text-center redes-titulo">Seguinos en:</h3>
 
-                <div class="row align-items-center justify-content-between border-bottom">
+                    <div class="fs-2 d-flex justify-content-around py-3 justify-content-xl-between">
 
-                    <div class="py-3 col-xl-4 redes">
-                        <h3 class="text-center redes-titulo">Seguinos en:</h3>
-                        <div class="fs-2 d-flex justify-content-around py-3 justify-content-xl-between">
-                            <a href="https://www.facebook.com" target="_blank" class="fb"><i
-                                    class="bi bi-facebook"></i></a>
-                            <a href="https://twitter.com" target="_blank" class="tw"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.youtube.com/" target="_blank" class="yt"><i
-                                    class="bi bi-youtube"></i></a>
-                            <a href="https://www.instagram.com" target="_blank" class="it"><i
-                                    class="bi bi-instagram"></i></a>
-                        </div>
+                        <a href="https://www.facebook.com" target="_blank" class="fb"><i class="bi bi-facebook"></i></a>
+
+                        <a href="https://twitter.com" target="_blank" class="tw"><i class="bi bi-twitter"></i></a>
+
+                        <a href="https://www.youtube.com/" target="_blank" class="yt"><i class="bi bi-youtube"></i></a>
+
+                        <a href="https://www.instagram.com" target="_blank" class="it"><i
+                                class="bi bi-instagram"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-around p-3 fs-3 col-xl-4 localizacion">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#punto-venta"><i
+                            class="bi bi-geo-alt-fill"></i>Punto de Venta</a>
+                </div>
+
+                <div class="text-center py-3 col-xl-4">
+                    <h3 class="ayuda">Ayuda:</h3>
+                    <p class="ayuda-parrafo">Si tenés sugerencias o comentarios</p>
+                    <a class="btn btn-primary fs-5 c-blanco" href="#" role="button">Contactanos</a>
+                </div>
+
+            </div>
+
+            <p class="m-0 p-2 text-center marca">Las marcas y logos de <a href="https://compragamer.com/"
+                    target="_blank">compragamer.com compragamer.com/tv
+                    compragamer.com/reviews</a> son propiedad de Newton
+                Station SRL <br>
+                Todos los derechos reservados 2017 </p>
+
+        </div>
+
+        <!-- Modal Punto de Venta -->
+
+        <div class="modal fade" id="punto-venta" tabindex="-1" aria-labelledby="punto-venta" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h1 class="modal-title" id="punto-venta">Punto de Venta</h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                     </div>
 
-                    <div class="d-flex justify-content-around p-3 fs-3 col-xl-4 localizacion">
-                        <a href="./pages/puntos-ventas.html"><i class="bi bi-geo-alt-fill"></i>Puntos de Venta</a>
-                    </div>
-
-                    <div class="text-center py-3 col-xl-4">
-                        <h3 class="ayuda">Ayuda:</h3>
-                        <p class="ayuda-parrafo">Si tenés sugerencias o comentarios</p>
-                        <a class="btn btn-primary fs-5 c-blanco" href="#" role="button">Contactanos</a>
+                    <div class="modal-body">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.599493494628!2d-58.4511806!3d-34.6003715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e712bd23c7ce4ba!2sCOMPRA%20GAMER!5e0!3m2!1ses-419!2sar!4v1667160947249!5m2!1ses-419!2sar"
+                            style="border:0;" height="400" class="map__venta" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
-
-                <p class="m-0 p-2 text-center marca">Las marcas y logos de <a href="https://compragamer.com/"
-                        target="_blank">compragamer.com compragamer.com/tv
-                        compragamer.com/reviews</a> son propiedad de Newton
-                    Station SRL <br>
-                    Todos los derechos reservados 2017 </p>
-
             </div>
-        </footer>
+        </div>
 
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        <!-- Final Modal Punto de Venta -->
+
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     background-size: cover;
     @include flex-center();
 
-    &-titulo {
+    &__titulo {
         @include texto($fuente-secundaria , 2rem, bolder, $color-letra , $sombra-letra , none, .1rem, center);
 
         @include tablet {
@@ -17,7 +17,7 @@
         }
     }
 
-    &-parrafo {
+    &__parrafo {
         @include texto($fuente-secundaria , 1.5rem, bolder, $color-letra , $sombra-letra , none, .1rem, center);
 
         @include tablet {
@@ -29,18 +29,18 @@
         }
     }
 
-    &-btn {
+    &__btn {
         @include flex-center();
     }
 
 }
 
 .novedades {
-    &-titulo {
+    &__titulo {
         @extend %tytle;
     }
 
-    &-art {
+    &__art {
         @include flex-art();
 
         @include movile{
@@ -52,28 +52,28 @@
         }
     }
 
-    &-producto{
+    &__producto{
         @extend %articulo;
     }
 
-    &-img {
+    &__img {
         @extend %art-img;
     }
 
-    &-titulo-producto {
-        height: 50px;
+    &__titulo--producto {
         @extend %art-tytle;
+        @extend %art-titulo;
     }
 
-    &-cont-boton {
+    &__cont--boton {
         @include flex-center();
     }
 
-    &-precio {
+    &__precio {
         @extend %precio-tytle;
     }
 
-    &-boton {
+    &__boton {
         @extend %art-btn;
     }
 

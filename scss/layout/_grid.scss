@@ -32,19 +32,19 @@
     .registro {
         @include desktop {
     
-            &-titulo {
+            &__titulo {
                 grid-area: titulo;
             }
     
-            &-detalles {
+            &__detalles {
                 grid-area: detalles;
             }
     
-            &-form {
+            &__form {
                 grid-area: formulario;
             }
     
-            &-redes {
+            &__redes {
                 grid-area: redes;
             }
     

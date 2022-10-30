@@ -42,7 +42,7 @@
 }
 
 //Formulario Registro
-.registro-formulario input {
+.registro__formulario input {
     @include texto($fuente-principal , 1.125rem, 700, $color-letra-art , none , none, .2rem, center);
     border-top-style: none;
     border-left-style: none;
@@ -62,8 +62,8 @@
 }
 }
 
-.cont-checkbox-1,
-.cont-checkbox-2 {
+.cont__checkbox--1,
+.cont__checkbox--2 {
     text-align: center;
 }
 

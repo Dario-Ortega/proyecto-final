@@ -7,7 +7,7 @@
         gap: 10px;
     }
 
-    &-titulo {
+    &__titulo {
         @include texto($fuente-principal , 1.8rem, 700, $titulo-registro , none, uppercase, .2rem, center);
 
         @include tablet {
@@ -15,7 +15,7 @@
         }
     }
 
-    &-formulario {
+    &__formulario {
         display: grid;
         gap: 20px;
         width: auto;
@@ -23,7 +23,7 @@
         box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
     }
 
-    &-formulario-grupo {
+    &__formulario--grupo {
         display: flex;
         flex-direction: column;
         gap: 3px;
@@ -41,11 +41,11 @@
         }
     }
 
-    &-redes-titulo {
+    &__redes--titulo {
         @include texto($fuente-principal , 1.6rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
     }
 
-    &-redes {
+    &__redes {
         padding: 30px;
         display: grid;
         background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);

@@ -230,6 +230,7 @@ a {
   justify-content: center;
   align-items: center;
   background: #ced4da;
+  position: relative;
   transition: all 600ms ease-in-out;
 }
 @media (min-width: 768px) {
@@ -288,6 +289,7 @@ a {
   justify-content: center;
   align-items: center;
   background: #ced4da;
+  position: relative;
   transition: all 600ms ease-in-out;
 }
 @media (min-width: 768px) {

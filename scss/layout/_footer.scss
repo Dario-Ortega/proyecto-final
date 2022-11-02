@@ -28,8 +28,7 @@
 }
 
 .localizacion a {
-    @include texto($fuente-principal , 1.438rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
-    line-height: 50px;
+    @extend %footer;
 
 
     & i {

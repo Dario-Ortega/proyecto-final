@@ -1,6 +1,6 @@
 //Formulario Modal
 .acceder-form input {
-    @include texto($fuente-principal , 1.25rem, 700, $color-letra-art , none , none, .2rem, center);
+    @include texto($fuente-principal , 1.25rem, 700, $color-letra-art , none , none, .1rem, center);
     border-radius: 0;
     border-top-style: none;
     border-left-style: none;
@@ -48,12 +48,12 @@
     border-left-style: none;
     border-right-style: none;
     border-bottom: 1px solid $titulo-registro;
-    margin: 10px 30px;
     padding: 5px 10px;
     caret-color: $color-principal;
 
     @include tablet{
         font-size: 1.438rem;
+        margin: 10px 30px;
     }
 
     &:active,

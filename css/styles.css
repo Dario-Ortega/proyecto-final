@@ -84,7 +84,7 @@ a {
   }
 }
 
-.ayuda, .redes-titulo {
+.ayuda, .localizacion a, .redes-titulo {
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
   font-weight: 700;
@@ -95,12 +95,12 @@ a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .ayuda, .redes-titulo {
+  .ayuda, .localizacion a, .redes-titulo {
     font-size: 1.25rem;
   }
 }
 @media (min-width: 1200px) {
-  .ayuda, .redes-titulo {
+  .ayuda, .localizacion a, .redes-titulo {
     font-size: 1.438rem;
   }
 }
@@ -151,7 +151,7 @@ a {
   color: #292525;
   text-shadow: none;
   text-transform: none;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   border-radius: 0;
   border-top-style: none;
@@ -203,13 +203,13 @@ a {
   border-left-style: none;
   border-right-style: none;
   border-bottom: 1px solid #797979;
-  margin: 10px 30px;
   padding: 5px 10px;
   caret-color: #e85d04;
 }
 @media (min-width: 768px) {
   .registro__formulario input {
     font-size: 1.438rem;
+    margin: 10px 30px;
   }
 }
 .registro__formulario input:active, .registro__formulario input:focus {
@@ -519,17 +519,6 @@ a {
   font-size: 35px;
 }
 
-.localizacion a {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.438rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-shadow: 0.1rem 0.1rem 0.1rem #333;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  line-height: 50px;
-}
 .localizacion a i {
   color: #ffffff;
   font-size: 30px;
@@ -1137,6 +1126,11 @@ a {
   border-radius: 5px;
   transition: 0.5s ease-in-out;
 }
+.btn-primary {
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1D3557;
+  --bs-btn-hover-border-color: #1D3557;
+}
 
 .boton {
   padding: 1.5rem 5rem;
@@ -1164,7 +1158,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1rem;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: 700;
@@ -1188,7 +1182,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   font-size: 1rem;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-weight: 700;
@@ -1214,8 +1208,8 @@ a {
   opacity: 1;
 }
 .boton:hover {
-  border: 2px solid #0d6efd;
-  background: #0d6efd;
+  border: 2px solid #1D3557;
+  background: #1D3557;
   transition: 0.3s ease;
 }
 
@@ -1247,8 +1241,8 @@ a {
     font-size: 1.4rem;
   }
   .novedades__boton:hover, .hardware__boton:hover, .pc__boton:hover, .perifericos__boton:hover, .consolas__boton:hover, .juegos__boton:hover {
-    border: 2px solid #0d6efd;
-    background: #0d6efd;
+    border: 2px solid #1D3557;
+    background: #1D3557;
     transition: 0.3s;
     color: #ffffff;
     transition: 0.3s ease-in-out;
@@ -1334,7 +1328,7 @@ a {
 }
 @media (min-width: 1200px) {
   .contacto__formulario--submit:hover {
-    background-color: #0d6efd;
+    background-color: #1D3557;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
     border: 1px solid #ffffff;
     color: #ffffff;
@@ -1361,7 +1355,7 @@ a {
 }
 @media (min-width: 1200px) {
   .registro__formulario--submit:hover {
-    background-color: #0d6efd;
+    background-color: #1D3557;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
     transition: 0.5s ease-in-out;
   }

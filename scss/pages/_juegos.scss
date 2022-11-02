@@ -49,9 +49,7 @@
 
 //Categorias
 .juegos__genero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
 
     & span {
         margin: 0 3px;

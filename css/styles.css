@@ -18,7 +18,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -88,7 +88,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -117,7 +117,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: none;
@@ -141,7 +141,7 @@ a {
 .modal-title {
   font-family: "Lato", sans-serif;
   letter-spacing: 0.1rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.41);
 }
 
 .acceder-form input {
@@ -330,7 +330,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -355,7 +355,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -380,7 +380,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -420,7 +420,7 @@ a {
 .accordion-button:not(.collapsed) {
   color: inherit;
   background: #ff5400;
-  color: #fff;
+  color: #ffffff;
 }
 .accordion-button:not(.collapsed)::after {
   filter: brightness(0%) invert(100%);
@@ -523,7 +523,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1.438rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -531,7 +531,7 @@ a {
   line-height: 50px;
 }
 .localizacion a i {
-  color: #fff;
+  color: #ffffff;
   font-size: 30px;
 }
 
@@ -539,7 +539,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: none;
@@ -559,7 +559,7 @@ a {
 
 .marca,
 a {
-  color: #fff;
+  color: #ffffff;
   font-family: "Roboto Slab", serif;
 }
 
@@ -580,7 +580,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bolder;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: 0.1rem;
@@ -600,7 +600,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: bolder;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: 0.1rem;
@@ -661,7 +661,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: 0.2rem;
@@ -678,7 +678,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -775,7 +775,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -958,7 +958,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -979,7 +979,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1000,7 +1000,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1021,7 +1021,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1042,7 +1042,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1063,7 +1063,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1084,7 +1084,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1105,7 +1105,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: none;
   letter-spacing: none;
@@ -1126,7 +1126,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #333;
   text-transform: uppercase;
   letter-spacing: none;
@@ -1223,7 +1223,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0.1rem 0.1rem 0.1rem #4b4b4b;
   text-transform: uppercase;
   letter-spacing: none;
@@ -1250,7 +1250,7 @@ a {
     border: 2px solid #0d6efd;
     background: #0d6efd;
     transition: 0.3s;
-    color: #fff;
+    color: #ffffff;
     transition: 0.3s ease-in-out;
   }
 }
@@ -1316,43 +1316,47 @@ a {
 }
 
 .contacto__formulario--submit {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
   width: 100%;
   height: 50px;
   background-color: #292525;
   border-radius: 7px;
-  color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  font-weight: 700;
-  text-shadow: 0.1rem 0.1rem 0.1rem #333;
 }
-.contacto__formulario--submit:hover {
-  background-color: #0d6efd;
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
-  border: 1px solid #fff;
-  color: #fff;
-  transition: 0.3s ease-in-out;
+@media (min-width: 1200px) {
+  .contacto__formulario--submit:hover {
+    background-color: #0d6efd;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .registro__formulario--submit {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
   width: 100%;
   height: 50px;
   background-color: #ff5400;
   border-radius: 7px;
-  color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  font-weight: 700;
-  text-shadow: 0.1rem 0.1rem 0.1rem #333;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 1200px) {
@@ -1364,10 +1368,15 @@ a {
 }
 
 .registro__redes a {
-  width: 100%;
+  font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.41);
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  width: 100%;
   margin: 15px 0;
   padding: 10px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
@@ -1388,13 +1397,13 @@ a {
 .fb__r {
   background: #3b5998;
   border-style: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 1200px) {
   .fb__r:hover {
-    background: #fff;
+    background: #ffffff;
     color: #3b5998;
     transition: 0.5s ease-in-out;
   }
@@ -1403,13 +1412,13 @@ a {
 .tw__r {
   background: #55acee;
   border-style: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 1200px) {
   .tw__r:hover {
-    background: #fff;
+    background: #ffffff;
     color: #55acee;
     transition: 0.5s ease-in-out;
   }
@@ -1418,13 +1427,13 @@ a {
 .gg__r {
   background: #cd201f;
   border-style: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 1200px) {
   .gg__r:hover {
-    background: #fff;
+    background: #ffffff;
     color: #cd201f;
     transition: 0.5s ease-in-out;
   }
@@ -1433,13 +1442,13 @@ a {
 .it__r {
   background: #e4405f;
   border-style: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 1200px) {
   .it__r:hover {
-    background: #fff;
+    background: #ffffff;
     color: #e4405f;
     transition: 0.5s ease-in-out;
   }

@@ -191,47 +191,38 @@
 
 //Boton Contacto
 .contacto__formulario--submit {
+    @include texto($fuente-principal , 1.6rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
     width: 100%;
     height: 50px;
     background-color: $color-letra-art;
     border-radius: 7px;
-    color: $color-letra;
     border: 1px solid $color-letra;
     cursor: pointer;
     transition: .3s ease-in-out;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-    font-weight: 700;
-    text-shadow: .1rem .1rem .1rem #333;
 
-    &:hover {
-        background-color: $color-hover;
-        box-shadow: 0 0 14px rgba(0, 0, 0, .2);
-        border: 1px solid $color-letra;
-        color: $color-letra;
-        transition: .3s ease-in-out;
+    @include desktop {
+
+        &:hover {
+            background-color: $color-hover;
+            box-shadow: 0 0 14px rgba(0, 0, 0, .2);
+            border: 1px solid $color-letra;
+            color: $color-letra;
+            transition: .3s ease-in-out;
+        }
+
     }
 }
 
 //Boton Registro
 .registro__formulario--submit {
+    @include texto($fuente-principal , 1.6rem, 700, $color-letra , $sombra-letra , uppercase, .2rem, center);
     width: 100%;
     height: 50px;
     background-color: $color-boton;
     border-radius: 7px;
-    color: $color-letra;
     border: 1px solid $color-letra;
     cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-    font-weight: 700;
-    text-shadow: .1rem .1rem .1rem #333;
     transition: .5s ease-in-out;
-
 
     @include desktop {
 
@@ -245,10 +236,8 @@
 }
 
 .registro__redes a {
+    @include texto($fuente-principal , 1rem, 400, $color-letra , $sombra-letra-art , none, .1rem, center);
     width: 100%;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
     margin: 15px 0;
     padding: 10px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
